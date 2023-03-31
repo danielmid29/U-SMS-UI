@@ -1,0 +1,311 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DCC29E;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 3px 13px #4D433570;
+}
+
+.nav-links-active {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #4D4335;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-right: 13px;
+    padding-left: 13px;
+    letter-spacing: 1.5px;
+    height: 100%;
+}
+
+.nav-link:hover {
+    background-color: #EED9BD;
+    transition: 300ms ease-in-out;
+}
+
+.nav-link-active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #DCC29E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 13px;
+    letter-spacing: 1.5px;
+    background-color: #4D4335;
+    height: 100%;
+    cursor: default;
+}
+
+.nav-bar-text {
+    font-weight: 550;
+}
+
+.nav-icon {
+    font-size: 26.5px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+}
+
+.option-bars {
+    color: #4D4335;
+    padding-top: 12px;
+    font-size: 1.15em;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 30px;
+    display: none;
+}
+
+.navbar-right-container {
+    display: flex;
+}
+
+.notification {
+    color: #4D4335;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+.notification-icon {
+    font-size: 1.3em;
+}
+
+.user-detail-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.user-detail {
+    display: flex;
+    text-decoration: none;
+    color: #4D4335;
+    margin-right: 20px;
+    align-items: center;
+    font-weight: 500;
+    height: 100%;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.user-pic {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-left: 12px;
+}
+
+.nav-link-mobile {
+    display: none;
+}
+
+.profile-dropdown {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    height: 100px;
+    width: 120px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: #DCC29E;
+    background-color: #4D4335;
+    backdrop-filter: blur(4px);
+    transition: .3s ease-in-out;
+    border-radius: 13px;
+    border-width: 2px;
+    margin-top: 15px;
+}
+
+.profile-dropdown-dummy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.profile-dropdown-link {
+    text-decoration: none;
+    color: #DCC29E;
+    font-size: 14px;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.profile-dropdown-link:hover {
+    color: #4D4335;
+    transition: 300ms ease-in-out;
+    background-color: #DCC29E;
+    color: #4D4335;
+    transition: 300ms ease-in-out;
+    border-radius: 13px;
+    backdrop-filter: blur(4px);
+}
+
+.sp-profile {
+    display: none;
+    opacity: 0;
+    transition: 300ms ease-in-out;
+}
+
+.sp-profile.active {
+    opacity: 1;
+    display: flex;
+}
+
+@media screen and (max-width:1400px) {
+    .nav-link {
+        font-size: 14px;
+        transition: 300ms ease-in-out;
+    }
+
+    .nav-link-active {
+        font-size: 14px;
+        padding-top: 11px;
+        transition: 300ms ease-in-out;
+    }
+
+
+
+    .profile-dropdown-link {
+        font-size: 14px;
+        transition: 300ms ease-in-out;
+    }
+
+
+    .nav-icon {
+        font-size: 24px;
+        transition: 300ms ease-in-out;
+    }
+
+    .user-detail {
+        font-size: 14px;
+        transition: 300ms ease-in-out;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .nav-link {
+        font-size: 13px;
+        transition: 300ms ease-in-out;
+    }
+
+    .nav-link-active {
+        font-size: 13px;
+        transition: 300ms ease-in-out;
+    }
+
+
+
+    .user-detail {
+        font-size: 13px;
+        transition: 300ms ease-in-out;
+    }
+
+}
+
+@media screen and (max-width:1110px) {
+
+    .nav-links-active {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        position: absolute;
+        top: 0;
+        background-color: rgba(220, 194, 158, .70);
+        width: 100%;
+        margin: 65px 10px 10px 10px;
+        border-radius: 13px;
+        backdrop-filter: blur(4px);
+        transition: .3s ease-in-out;
+        overflow: hidden;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        position: absolute;
+        top: 0;
+        left: -110%;
+        background-color: rgba(220, 194, 158, .95);
+        width: 100%;
+        margin: 10px 10px 10px 10px;
+        border-radius: 13px;
+        backdrop-filter: blur(4px);
+    }
+
+
+    .option-bars {
+        display: block;
+        padding-left: 20px;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 10px 13px;
+    }
+
+    .nav-link:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .nav-link-active {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(77, 67, 53, 0.75);
+        backdrop-filter: blur(4px);
+    }
+
+    .nav-link-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #4D4335;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 10px 13px;
+        letter-spacing: 1.5px;
+        height: 100%;
+    }
+}
